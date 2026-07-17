@@ -1,19 +1,37 @@
+"use client"
+
+import { useTranslations } from "next-intl"
 import React from "react"
 
 import { MaterialIcon } from "../components/Icons"
-import { ROUTINE_CONTENT } from "../constants/content"
 
 export function Routine() {
+  const t = useTranslations("routine")
+
+  const steps = [
+    { icon: "wb_sunny", title: t("steps.step1.title"), time: t("steps.step1.time") },
+    { icon: "coffee", title: t("steps.step2.title"), time: t("steps.step2.time") },
+    { icon: "school", title: t("steps.step3.title"), time: t("steps.step3.time") },
+    { icon: "menu_book", title: t("steps.step4.title"), time: t("steps.step4.time") },
+    {
+      icon: "sports_volleyball",
+      title: t("steps.step5.title"),
+      time: t("steps.step5.time"),
+    },
+    { icon: "dinner_dining", title: t("steps.step6.title"), time: t("steps.step6.time") },
+    { icon: "bedtime", title: t("steps.step7.title"), time: t("steps.step7.time") },
+  ]
+
   return (
     <section className="py-20 md:py-28 bg-[#eff3ff]/30 overflow-hidden font-gujarati">
       <div className="max-w-[1280px] mx-auto px-6">
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-primary font-bold mb-16 text-center">
-          {ROUTINE_CONTENT.title}
+          {t("title")}
         </h2>
 
         {/* Steps Flow */}
         <div className="flex flex-wrap justify-center gap-6 lg:gap-4 items-center">
-          {ROUTINE_CONTENT.steps.map((step, idx) => (
+          {steps.map((step, idx) => (
             <React.Fragment key={idx}>
               {/* Circle Item */}
               <div className="flex flex-col items-center group w-32 md:w-36 text-center">
@@ -25,7 +43,7 @@ export function Routine() {
               </div>
 
               {/* Dotted Line Connector */}
-              {idx < ROUTINE_CONTENT.steps.length - 1 && (
+              {idx < steps.length - 1 && (
                 <div className="hidden lg:block h-px w-8 xl:w-12 bg-outline-variant/40 -mt-10"></div>
               )}
             </React.Fragment>

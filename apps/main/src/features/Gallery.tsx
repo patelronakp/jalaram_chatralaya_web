@@ -1,7 +1,12 @@
+"use client"
+
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 import React from "react"
 
 export function Gallery() {
+  const t = useTranslations("gallery")
+
   const images = [
     {
       src: "/images/gallery_main.jpg",
@@ -29,7 +34,7 @@ export function Gallery() {
     <section id="gallery" className="py-20 md:py-28 bg-white font-gujarati">
       <div className="max-w-[1280px] mx-auto px-6">
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-primary font-bold mb-16 text-center">
-          છાત્રાલય જીવનની ઝલક
+          {t("title")}
         </h2>
 
         {/* Gallery Grid */}

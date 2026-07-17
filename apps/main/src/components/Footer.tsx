@@ -1,11 +1,31 @@
+"use client"
+
 import Image from "next/image"
-import Link from "next/link"
+import { useLocale, useTranslations } from "next-intl"
 import React from "react"
 
-import { FOOTER_CONTENT } from "../constants/content"
+import { Link } from "../i18n/routing"
 import { MaterialIcon } from "./Icons"
 
 export function Footer() {
+  const t = useTranslations("footer")
+  const tNav = useTranslations("nav")
+  const locale = useLocale()
+
+  const quickLinks = [
+    { label: tNav("about"), href: "#about" },
+    { label: tNav("facilities"), href: "#facilities" },
+    { label: tNav("admission"), href: "#admission" },
+    { label: locale === "gu" ? "ગેલેરી" : "Gallery", href: "#gallery" },
+  ]
+
+  const infoLinks = [
+    { label: t("faq"), href: "#faq" },
+    { label: t("terms"), href: "#terms" },
+    { label: t("privacy"), href: "#privacy" },
+    { label: t("trustees"), href: "#trustees" },
+  ]
+
   return (
     <footer className="bg-primary text-white font-gujarati">
       <div className="max-w-[1280px] mx-auto px-6 pt-24 pb-12">
@@ -21,19 +41,19 @@ export function Footer() {
                 height={64}
               />
               <h4 className="text-xl font-bold font-gujarati leading-tight">
-                શ્રી જલારામ કન્યા છાત્રાલય
+                {locale === "gu" ? "શ્રી જલારામ કન્યા છાત્રાલય" : "Shri Jalaram Kanya Chatralay"}
               </h4>
             </div>
-            <p className="opacity-70 leading-relaxed text-base">{FOOTER_CONTENT.description}</p>
+            <p className="opacity-70 leading-relaxed text-base">{t("desc")}</p>
           </div>
 
           {/* Quick Links */}
           <div>
             <h5 className="font-bold text-lg mb-6 border-l-4 border-secondary-container pl-4">
-              {FOOTER_CONTENT.quickLinks.title}
+              {t("quickLinks")}
             </h5>
             <ul className="space-y-3 opacity-80 text-base">
-              {FOOTER_CONTENT.quickLinks.items.map((link) => (
+              {quickLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
@@ -49,10 +69,10 @@ export function Footer() {
           {/* Info Links */}
           <div>
             <h5 className="font-bold text-lg mb-6 border-l-4 border-secondary-container pl-4">
-              {FOOTER_CONTENT.infoLinks.title}
+              {t("info")}
             </h5>
             <ul className="space-y-3 opacity-80 text-base">
-              {FOOTER_CONTENT.infoLinks.items.map((link) => (
+              {infoLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
@@ -68,16 +88,16 @@ export function Footer() {
           {/* Contact & Socials */}
           <div>
             <h5 className="font-bold text-lg mb-6 border-l-4 border-secondary-container pl-4">
-              {FOOTER_CONTENT.contact.title}
+              {t("contact")}
             </h5>
             <ul className="space-y-4 opacity-80 text-base">
               <li className="flex items-center gap-3">
                 <MaterialIcon name="call" className="text-secondary-container" />
-                <span>{FOOTER_CONTENT.contact.phone}</span>
+                <span>{t("phone")}</span>
               </li>
               <li className="flex items-center gap-3">
                 <MaterialIcon name="mail" className="text-secondary-container" />
-                <span className="break-all">{FOOTER_CONTENT.contact.email}</span>
+                <span className="break-all">{t("email")}</span>
               </li>
               <li className="flex gap-4 pt-2">
                 <Link
@@ -99,8 +119,8 @@ export function Footer() {
 
         {/* Copyright Area */}
         <div className="pt-12 border-t border-white/10 text-center opacity-60 text-sm">
-          <p>{FOOTER_CONTENT.copyright}</p>
-          <p className="text-[12px] mt-2 font-sans">{FOOTER_CONTENT.devNote}</p>
+          <p>{t("copyright")}</p>
+          <p className="text-[12px] mt-2 font-sans">{t("devNote")}</p>
         </div>
       </div>
     </footer>
@@ -108,3 +128,4 @@ export function Footer() {
 }
 
 export default Footer
+

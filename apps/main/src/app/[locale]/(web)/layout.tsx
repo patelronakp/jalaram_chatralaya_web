@@ -3,8 +3,8 @@
 
 import React from "react"
 
-import { Footer as JalaramFooter } from "../../components/Footer"
-import { Header as JalaramHeader } from "../../components/Header"
+import { Footer as JalaramFooter } from "../../../components/Footer"
+import { Header as JalaramHeader } from "../../../components/Header"
 
 export default function WebLayout({ children }: { children: React.ReactNode }) {
   return (

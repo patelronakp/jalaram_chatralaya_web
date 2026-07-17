@@ -1,11 +1,29 @@
+"use client"
+
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 import React from "react"
 
 import { Button } from "../components/Button"
 import { MaterialIcon } from "../components/Icons"
-import { ABOUT_CONTENT } from "../constants/content"
 
 export function About() {
+  const t = useTranslations("about")
+
+  const features = [
+    {
+      icon: "school",
+      title: t("feature1Title"),
+      description: t("feature1Desc"),
+    },
+    {
+      icon: "diversity_1",
+      title: t("feature2Title"),
+      description: t("feature2Desc"),
+      isSecondary: true,
+    },
+  ]
+
   return (
     <section id="about" className="py-20 md:py-28 relative bg-white overflow-hidden font-gujarati">
       <div className="absolute inset-0 gujarati-pattern pointer-events-none"></div>
@@ -28,18 +46,18 @@ export function About() {
         {/* Right Content Column */}
         <div className="w-full lg:w-1/2">
           <span className="text-secondary font-semibold text-base md:text-lg tracking-[0.2em] uppercase mb-4 block">
-            {ABOUT_CONTENT.tag}
+            {t("tag")}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-primary font-bold mb-6 leading-tight">
-            {ABOUT_CONTENT.title}
+            {t("title")}
           </h2>
           <p className="font-sans text-base md:text-lg text-on-surface-variant mb-8 leading-relaxed">
-            {ABOUT_CONTENT.description}
+            {t("description")}
           </p>
 
           {/* Info cards grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10 mb-10">
-            {ABOUT_CONTENT.features.map((feature, idx) => (
+            {features.map((feature, idx) => (
               <div key={idx} className="flex items-start gap-4">
                 <div
                   className={`p-3 rounded-lg ${
@@ -63,7 +81,7 @@ export function About() {
           </div>
 
           <Button variant="primary" className="px-8 py-4 text-base md:text-lg">
-            {ABOUT_CONTENT.cta}
+            {t("cta")}
           </Button>
         </div>
       </div>
