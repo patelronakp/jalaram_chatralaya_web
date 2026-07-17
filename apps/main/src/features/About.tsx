@@ -33,8 +33,8 @@ export function About() {
           <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative z-10">
             <Image
               alt="Institutional Heritage"
-              className="w-full h-full object-cover"
-              src="/images/about_heritage.jpg"
+              className="w-full h-full object-contain"
+              src="/images/about_heritage-2.png"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
             />

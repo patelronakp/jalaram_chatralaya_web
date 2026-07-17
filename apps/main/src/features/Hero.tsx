@@ -19,11 +19,19 @@ export function Hero() {
   ]
 
   const statsList = [
-    { value: "૩૫+", label: tStats("experience") },
-    { value: "૧૦૦%", label: tStats("freeFacility"), textClass: "text-secondary" },
-    { value: "૨૪x૭", label: tStats("security") },
-    { value: "૫૦૦+", label: tStats("students"), textClass: "text-secondary" },
+    { value: tStats("values.experience"), label: tStats("experience") },
+    {
+      value: tStats("values.freeFacility"),
+      label: tStats("freeFacility"),
+      textClass: "text-secondary",
+    },
+    { value: tStats("values.security"), label: tStats("security") },
+    { value: tStats("values.students"), label: tStats("students"), textClass: "text-secondary" },
   ]
+
+  const scrollToContact = () => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+  }
 
   return (
     <>
@@ -35,7 +43,7 @@ export function Hero() {
           <Image
             alt="Hero"
             className="w-full h-full object-cover opacity-80"
-            src="/images/hero_banner.jpg"
+            src="/images/glimpse-8.jpg"
             fill
             priority
             sizes="100vw"
@@ -43,16 +51,16 @@ export function Hero() {
         </div>
 
         {/* Content */}
-        <div className="relative z-20 max-w-[1280px] mx-auto px-6 w-full py-20 md:py-32">
+        <div className="relative z-20 max-w-[1280px] mx-auto px-6 w-full py-20 md:py-30">
           <div className="max-w-3xl text-white">
             {/* Saffron Badge */}
-            <div className="inline-flex items-center gap-3 px-4 py-1.5 bg-secondary-container/90 backdrop-blur text-on-secondary-container rounded-full mb-8 font-semibold text-sm md:text-base">
+            <div className="inline-flex items-center gap-3 px-4 py-1.5 bg-secondary-container/90 backdrop-blur text-on-secondary-container rounded-full mb-8 font-normal text-sm md:text-base">
               <MaterialIcon name="verified" className="text-[18px]" />
               <span>{t("badge")}</span>
             </div>
 
             {/* Title */}
-            <h1 className="font-extrabold mb-8 leading-[1.15] text-4xl md:text-5xl lg:text-6xl tracking-tight">
+            <h1 className="font-extrabold mb-8 leading-[1.35] md:leading-[1.4] lg:leading-[1.28] text-4xl md:text-5xl lg:text-6xl tracking-tight">
               {t("title")}
             </h1>
 
@@ -72,6 +80,7 @@ export function Hero() {
               </Button>
               <Button
                 variant="outline"
+                onClick={scrollToContact}
                 className="px-8 py-4 text-lg md:text-xl rounded-xl border-white/30 text-white hover:bg-white/10"
               >
                 {t("secondaryCta")}
