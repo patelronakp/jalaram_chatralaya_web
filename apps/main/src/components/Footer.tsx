@@ -1,0 +1,110 @@
+import Image from "next/image"
+import Link from "next/link"
+import React from "react"
+
+import { FOOTER_CONTENT } from "../constants/content"
+import { MaterialIcon } from "./Icons"
+
+export function Footer() {
+  return (
+    <footer className="bg-primary text-white font-gujarati">
+      <div className="max-w-[1280px] mx-auto px-6 pt-24 pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          {/* Brand Column */}
+          <div className="flex flex-col gap-6">
+            <div className="flex items-center gap-4">
+              <Image
+                alt="Logo White"
+                className="h-16 w-auto brightness-0 invert"
+                src="/images/logo.png"
+                width={64}
+                height={64}
+              />
+              <h4 className="text-xl font-bold font-gujarati leading-tight">
+                શ્રી જલારામ કન્યા છાત્રાલય
+              </h4>
+            </div>
+            <p className="opacity-70 leading-relaxed text-base">{FOOTER_CONTENT.description}</p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h5 className="font-bold text-lg mb-6 border-l-4 border-secondary-container pl-4">
+              {FOOTER_CONTENT.quickLinks.title}
+            </h5>
+            <ul className="space-y-3 opacity-80 text-base">
+              {FOOTER_CONTENT.quickLinks.items.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="hover:text-secondary-container transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Info Links */}
+          <div>
+            <h5 className="font-bold text-lg mb-6 border-l-4 border-secondary-container pl-4">
+              {FOOTER_CONTENT.infoLinks.title}
+            </h5>
+            <ul className="space-y-3 opacity-80 text-base">
+              {FOOTER_CONTENT.infoLinks.items.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="hover:text-secondary-container transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact & Socials */}
+          <div>
+            <h5 className="font-bold text-lg mb-6 border-l-4 border-secondary-container pl-4">
+              {FOOTER_CONTENT.contact.title}
+            </h5>
+            <ul className="space-y-4 opacity-80 text-base">
+              <li className="flex items-center gap-3">
+                <MaterialIcon name="call" className="text-secondary-container" />
+                <span>{FOOTER_CONTENT.contact.phone}</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <MaterialIcon name="mail" className="text-secondary-container" />
+                <span className="break-all">{FOOTER_CONTENT.contact.email}</span>
+              </li>
+              <li className="flex gap-4 pt-2">
+                <Link
+                  className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center hover:bg-secondary-container hover:text-primary transition-all"
+                  href="#"
+                >
+                  <MaterialIcon name="public" className="text-[20px]" />
+                </Link>
+                <Link
+                  className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center hover:bg-secondary-container hover:text-primary transition-all"
+                  href="#"
+                >
+                  <MaterialIcon name="share" className="text-[20px]" />
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Copyright Area */}
+        <div className="pt-12 border-t border-white/10 text-center opacity-60 text-sm">
+          <p>{FOOTER_CONTENT.copyright}</p>
+          <p className="text-[12px] mt-2 font-sans">{FOOTER_CONTENT.devNote}</p>
+        </div>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer
