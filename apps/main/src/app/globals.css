@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Work+Sans:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -66,18 +69,36 @@
   }
 }
 
-/* Web-specific Theme Scope (Cyan/Teal/Slate - Easy to replace per project) */
+/* Jalaram Web-specific Theme Scope */
 .theme-web {
-  --primary: 173 80% 40%;
-  --primary-foreground: 210 40% 98%;
-  --ring: 173 80% 40%;
+  --background: 50 60% 98%;
+  --foreground: 164 40% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 164 40% 10%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 164 40% 10%;
+  --primary: 164 100% 10%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 37 100% 26%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 50 20% 94%;
+  --muted-foreground: 164 15% 35%;
+  --accent: 37 99% 55%;
+  --accent-foreground: 164 100% 10%;
+  --border: 164 15% 85%;
+  --input: 164 15% 85%;
+  --ring: 164 100% 10%;
   --radius: 0.5rem;
 }
 
 .theme-web.dark {
-  --primary: 173 80% 45%;
-  --primary-foreground: 222.2 47.4% 11.2%;
-  --ring: 173 80% 45%;
+  --background: 164 40% 6%;
+  --foreground: 50 60% 98%;
+  --card: 164 40% 8%;
+  --card-foreground: 50 60% 98%;
+  --primary: 37 99% 55%;
+  --primary-foreground: 164 100% 10%;
+  --ring: 37 99% 55%;
 }
 
 /* Admin-specific Theme Scope (Indigo/Blue/Slate - Fixed & Reusable) */
@@ -100,5 +121,66 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: "Work Sans", sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-gujarati {
+    font-family: "Baloo 2", cursive;
+  }
+
+  .gujarati-pattern {
+    background-image: radial-gradient(#064e3b 0.5px, transparent 0.5px);
+    background-size: 32px 32px;
+    opacity: 0.02;
+  }
+
+  .premium-card {
+    background: #ffffff;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    box-shadow: 0 4px 20px -2px rgba(0, 53, 39, 0.05);
+  }
+
+  .premium-card:hover {
+    box-shadow: 0 20px 40px -10px rgba(0, 53, 39, 0.12);
+    transform: translateY(-8px);
+  }
+
+  .hero-gradient {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 53, 39, 0.95) 0%,
+      rgba(0, 53, 39, 0.7) 40%,
+      rgba(0, 53, 39, 0.2) 100%
+    );
+  }
+
+  .timeline-step::before {
+    content: "";
+    position: absolute;
+    left: 23px;
+    top: 48px;
+    bottom: -48px;
+    width: 2px;
+    background: repeating-linear-gradient(
+      to bottom,
+      #bfc9c3,
+      #bfc9c3 4px,
+      transparent 4px,
+      transparent 8px
+    );
+  }
+  .timeline-step:last-child::before {
+    display: none;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings:
+      "FILL" 0,
+      "wght" 400,
+      "GRAD" 0,
+      "opsz" 24;
   }
 }

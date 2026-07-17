@@ -17,9 +17,7 @@ export interface EntityFormContext {
   isEditing: boolean
 }
 
-export type EntityFormFields =
-  | React.ReactNode
-  | ((ctx: EntityFormContext) => React.ReactNode)
+export type EntityFormFields = React.ReactNode | ((ctx: EntityFormContext) => React.ReactNode)
 
 export interface EntityFormDialogProps<TValues extends FieldValues> {
   open: boolean

@@ -120,12 +120,7 @@ export function AdminSidebar({
 
       {/* Footer */}
       <div className="border-t p-3">
-        <p
-          className={cn(
-            "text-center text-xs text-muted-foreground/60",
-            collapsed && "md:hidden",
-          )}
-        >
+        <p className={cn("text-center text-xs text-muted-foreground/60", collapsed && "md:hidden")}>
           v1.0.0
         </p>
       </div>
