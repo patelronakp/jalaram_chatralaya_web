@@ -6,8 +6,6 @@ const nextConfig = {
     "@repo/api-client",
     "@repo/crud",
     "@repo/auth-core",
-    "@repo/auth-supabase",
-    "@repo/auth-firebase",
     "@repo/auth-custom-api",
     "@repo/admin-ui",
     "@repo/web-ui",

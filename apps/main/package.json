@@ -27,8 +27,6 @@
     "@repo/api-client": "workspace:*",
     "@repo/crud": "workspace:*",
     "@repo/auth-core": "workspace:*",
-    "@repo/auth-supabase": "workspace:*",
-    "@repo/auth-firebase": "workspace:*",
     "@repo/auth-custom-api": "workspace:*",
     "@repo/admin-ui": "workspace:*",
     "@repo/web-ui": "workspace:*",
