@@ -18,17 +18,17 @@ export function Timeline() {
 
   const steps = [
     {
-      numText: "૧",
+      numText: t("steps.step1.numText"),
       title: t("steps.step1.title"),
       description: t("steps.step1.description"),
     },
     {
-      numText: "૨",
+      numText: t("steps.step2.numText"),
       title: t("steps.step2.title"),
       description: t("steps.step2.description"),
     },
     {
-      numText: "૩",
+      numText: t("steps.step3.numText"),
       title: t("steps.step3.title"),
       description: t("steps.step3.description"),
     },
@@ -50,9 +50,7 @@ export function Timeline() {
             </div>
             {/* Required Documents Card */}
             <div className="p-8 rounded-2xl bg-primary-container text-white shadow-xl">
-              <h4 className="text-xl md:text-2xl font-bold mb-5">
-                {t("documents.title")}
-              </h4>
+              <h4 className="text-xl md:text-2xl font-bold mb-5">{t("documents.title")}</h4>
               <ul className="space-y-3 font-sans">
                 {documents.map((doc, idx) => (
                   <li key={idx} className="flex items-center gap-3">

@@ -13,6 +13,7 @@ export function FAQ() {
     { question: t("items.q1.q"), answer: t("items.q1.a") },
     { question: t("items.q2.q"), answer: t("items.q2.a") },
     { question: t("items.q3.q"), answer: t("items.q3.a") },
+    { question: t("items.q4.q"), answer: t("items.q4.a") },
   ]
 
   const toggle = (idx: number) => {
@@ -33,7 +34,7 @@ export function FAQ() {
             return (
               <div
                 key={idx}
-                className="bg-[#fdfcf7] rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm"
+                className="bg-background rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm"
               >
                 {/* Accordion Header Trigger */}
                 <button

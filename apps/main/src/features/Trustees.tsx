@@ -12,30 +12,30 @@ export function Trustees() {
       name: t("items.trustee1.name"),
       role: t("items.trustee1.role"),
       description: t("items.trustee1.description"),
-      image: "/images/trustee_1.jpg",
+      image: "/images/trustee.png",
     },
     {
       name: t("items.trustee2.name"),
       role: t("items.trustee2.role"),
       description: t("items.trustee2.description"),
-      image: "/images/trustee_2.jpg",
+      image: "/images/trustee.png",
     },
     {
       name: t("items.trustee3.name"),
       role: t("items.trustee3.role"),
       description: t("items.trustee3.description"),
-      image: "/images/trustee_3.jpg",
+      image: "/images/trustee-female.png",
     },
     {
       name: t("items.trustee4.name"),
       role: t("items.trustee4.role"),
       description: t("items.trustee4.description"),
-      image: "/images/trustee_4.jpg",
+      image: "/images/trustee.png",
     },
   ]
 
   return (
-    <section id="trustees" className="py-20 md:py-28 bg-[#fdfcf7] font-gujarati">
+    <section id="trustees" className="py-20 md:py-28 bg-background font-gujarati">
       <div className="max-w-[1280px] mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-primary font-bold mb-16 md:mb-20">
           {t("title")}
@@ -56,7 +56,7 @@ export function Trustees() {
                 />
               </div>
               {/* Profile Info */}
-              <h4 className="font-bold text-xl md:text-2xl text-primary mb-2">{trustee.name}</h4>
+              <h4 className="font-bold text-xl md:text-xl text-primary mb-2">{trustee.name}</h4>
               <p className="text-secondary font-semibold mb-4 text-base">{trustee.role}</p>
               <p className="font-sans text-sm text-on-surface-variant px-4 md:px-6 leading-relaxed">
                 {trustee.description}

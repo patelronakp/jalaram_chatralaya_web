@@ -16,8 +16,16 @@ export function Facilities() {
       title: t("items.restaurant.title"),
       description: t("items.restaurant.description"),
     },
-    { icon: "library_books", title: t("items.library.title"), description: t("items.library.description") },
-    { icon: "temple_hindu", title: t("items.temple.title"), description: t("items.temple.description") },
+    {
+      icon: "library_books",
+      title: t("items.library.title"),
+      description: t("items.library.description"),
+    },
+    {
+      icon: "temple_hindu",
+      title: t("items.temple.title"),
+      description: t("items.temple.description"),
+    },
     {
       icon: "health_and_safety",
       title: t("items.health.title"),
@@ -33,7 +41,7 @@ export function Facilities() {
   ]
 
   return (
-    <section id="facilities" className="py-20 md:py-28 bg-[#eff3ff]/50 font-gujarati">
+    <section id="facilities" className="py-20 md:py-28 bg-surface-container-low/50 font-gujarati">
       <div className="max-w-[1280px] mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16 md:mb-20">
@@ -48,11 +56,13 @@ export function Facilities() {
         {/* Facilities Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {items.map((item, idx) => (
-            <Card key={idx} className="p-8">
-              <div className="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center text-primary mb-6">
+            <Card key={idx} className="p-8 group cursor-pointer">
+              <div className="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-300 mb-6">
                 <MaterialIcon name={item.icon} className="text-[36px]" />
               </div>
-              <h3 className="text-xl md:text-2xl text-primary mb-3 font-bold">{item.title}</h3>
+              <h3 className="text-xl md:text-2xl text-primary hover:text-secondary-container transition-colors duration-300 mb-3 font-bold">
+                {item.title}
+              </h3>
               <p className="font-sans text-sm md:text-base text-on-surface-variant leading-relaxed">
                 {item.description}
               </p>

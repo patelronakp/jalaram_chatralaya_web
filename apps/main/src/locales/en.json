@@ -3,101 +3,109 @@
     "home": "Home",
     "about": "About Us",
     "facilities": "Facilities",
-    "admission": "Admission",
+    "admission": "Admission Process",
     "contact": "Contact",
     "language": "Language",
     "formBtn": "Admission Form"
   },
   "hero": {
-    "badge": "35+ Years of Selfless Service & Proud Heritage",
-    "title": "Shri Jalaram Raghuvanshi Lohana Kanya Chatralay",
-    "subtitle": "A sacred home for safety, cultural values, and all-round development of girls. We have been working for the bright future of Lohana daughters since 1988.",
+    "badge": "Over 38 years of selfless service and a proud tradition.",
+    "title": "A Safe Home for Daughters, a Sanctuary of Education and Values",
+    "subtitle": "Since 1988, with the blessings of Pujya Chande Bapa, this sacred place provides 100% free lodging, excellent education, and the courage for girls from villages and remote areas to live independently.",
     "primaryCta": "Admission Process",
     "secondaryCta": "Contact Us",
     "badges": {
-      "established": "Established 1988",
+      "established": "Established: 1988",
       "registered": "Registered Trust",
-      "freeHostel": "Free Hostel",
-      "secureCampus": "Secure Campus"
+      "freeHostel": "100% Free Lodging",
+      "secureCampus": "Fully Secure Campus"
     }
   },
   "stats": {
-    "experience": "Years Experience",
-    "freeFacility": "100% Free Facility",
-    "security": "24x7 Security & Care",
-    "students": "Bright Students"
+    "experience": "Years of Service",
+    "freeFacility": "Free Lodging & Boarding",
+    "security": "Care & Safety",
+    "students": "Alumnae Network",
+    "values": {
+      "experience": "35+",
+      "freeFacility": "100%",
+      "security": "24x7",
+      "students": "500+"
+    }
   },
   "about": {
-    "tag": "TRADITION & HERITAGE",
+    "tag": "Tradition & Heritage",
     "title": "About Shri Jalaram Raghuvanshi Lohana Kanya Chatralay",
-    "description": "Our organization is dedicated to providing high-quality education and a secure residential environment for Lohana community girls. With the blessings of Pujya Jalaram Bapa and the noble values of Raghuvanshi heritage, we strive to make girls independent and cultivate moral values.",
-    "feature1Title": "Educational Support",
-    "feature1Desc": "Guidance for a bright career path",
-    "feature2Title": "Cultural Sanctuary",
-    "feature2Desc": "Preservation of Indian culture",
+    "description": "Established with the blessings and values of Pujya Chande Bapa, this hostel provides village and remote area girls with not just lodging and boarding, but a secure home-like environment. Here, girls receive higher education free of charge, discover their inner potential, and become independent, confident individuals.",
+    "feature1Title": "Excellent Education & Guidance",
+    "feature1Desc": "Proper guidance and career development towards a bright future.",
+    "feature2Title": "Divine Values & Atmosphere",
+    "feature2Desc": "Cultural values, discipline, and motherly affection just like home.",
     "cta": "Get Complete Information"
   },
   "facilities": {
-    "title": "Our Modern Facilities",
-    "subtitle": "We provide more than just lodging; we offer an environment conducive to the overall growth of our girls.",
+    "title": "Our Facilities",
+    "subtitle": "We do not just provide a place to stay; we offer a secure and nurturing home-like environment for the all-round development of girls.",
     "items": {
       "bed": {
         "title": "Lodging Facility",
-        "description": "Well-ventilated, clean, and highly secure living quarters."
+        "description": "Bright and clean rooms. Well-ventilated, tidy, and fully secure living arrangements."
       },
       "restaurant": {
         "title": "Nutritious Food",
-        "description": "Pure vegetarian, home-style delicious and healthy meals."
+        "description": "Pure vegetarian meals. Fresh, delicious, and healthy breakfast, lunch, and dinner."
       },
       "library": {
-        "title": "Study Room",
-        "description": "Peaceful atmosphere and well-equipped library facilities."
+        "title": "Study Room & Library",
+        "description": "Quiet and study-friendly environment. Library books and calm study spaces for focused learning."
       },
       "temple": {
         "title": "Prayer Hall",
-        "description": "Daily prayers, peaceful spiritual activities, and assemblies."
+        "description": "Daily prayers and values. A center for spiritual peace, morning hymns, discourses, and cultural activities."
       },
       "health": {
-        "title": "Medical Checks",
-        "description": "Regular health checkups and complete first-aid facilities."
+        "title": "Medical Care",
+        "description": "Continuous health monitoring. Regular checkups, first-aid, and basic medical facilities."
       },
       "cctv": {
-        "title": "CCTV Security",
-        "description": "24-hour security guards and comprehensive CCTV monitoring."
+        "title": "24x7 Security & CCTV",
+        "description": "Fully secure campus. Round-the-clock security guards, CCTV cameras, and guidance of an experienced warden."
       },
       "sports": {
         "title": "Sports & Play",
-        "description": "Playground and equipment for physical health and activities."
+        "description": "Physical and mental growth. Sports equipment and an open playground for health and recreation."
       },
       "hotTub": {
-        "title": "Hot Water",
-        "description": "Eco-friendly solar water heating system across campus."
+        "title": "Solar Hot Water Facility",
+        "description": "Eco-friendly solar system. Solar water heaters for warm water during winters and as needed."
       }
     }
   },
   "admission": {
     "title": "Admission Process",
-    "subtitle": "Begin your daughter's bright future in 3 simple steps.",
+    "subtitle": "Start your daughter's bright future in just 3 simple steps.",
     "documents": {
       "title": "Required Documents",
-      "marklist": "Copy of Marksheet",
+      "marklist": "Copy of last year's marksheet",
       "lc": "School Leaving Certificate (LC)",
-      "aadhar": "Aadhar Card",
-      "photos": "Passport Size Photos"
+      "aadhar": "Copy of Aadhar Card",
+      "photos": "Passport size photographs"
     },
-    "routingPath": "admission-process",
     "steps": {
       "step1": {
+        "numText": "1",
         "title": "Obtain Form",
-        "description": "Download the form online from our website or obtain it from the trust office."
+        "description": "Download the admission form online from the website or collect it from the hostel office."
       },
       "step2": {
+        "numText": "2",
         "title": "Submit Documents",
-        "description": "Submit the completed form along with required academic and ID documents to the office."
+        "description": "Submit the filled form along with the required marksheet, Aadhar Card, and other papers at the office."
       },
       "step3": {
+        "numText": "3",
         "title": "Interview & Admission",
-        "description": "Admission will be confirmed on merit after a brief interaction with the trustees."
+        "description": "Admission will be finalized based on a general interview with the board of trustees and merit/need criteria."
       }
     }
   },
@@ -105,37 +113,55 @@
     "title": "Daily Routine: Hostel Life",
     "steps": {
       "step1": {
-        "title": "Morning Prayer",
-        "time": "6:00 AM"
+        "title": "Morning Awakening & Prayer",
+        "time": "Time: 6:00 AM"
       },
       "step2": {
-        "title": "Breakfast",
-        "time": "7:30 AM"
+        "title": "Nutritious Breakfast",
+        "time": "Time: 7:30 AM"
       },
       "step3": {
-        "title": "School/College",
-        "time": "10:00 AM"
+        "title": "School / College Hours",
+        "time": "Time: 10:00 AM"
       },
       "step4": {
-        "title": "Study Time",
-        "time": "4:00 PM"
+        "title": "Self-Study & Reading",
+        "time": "Time: 4:00 PM"
       },
       "step5": {
-        "title": "Recreation/Sports",
-        "time": "6:00 PM"
+        "title": "Sports & Recreation",
+        "time": "Time: 6:00 PM"
       },
       "step6": {
-        "title": "Dinner",
-        "time": "8:00 PM"
+        "title": "Evening Meals",
+        "time": "Time: 7:00 PM"
       },
       "step7": {
-        "title": "Rest / Lights Out",
-        "time": "10:00 PM"
+        "title": "Rest & Bedtime",
+        "time": "Time: 9:00 PM"
       }
     }
   },
   "gallery": {
-    "title": "Glimpses of Hostel Life"
+    "title": "Glimpses of Hostel Life",
+    "items": {
+      "img1": {
+        "title": "Grand Campus",
+        "description": "Our secure, well-ventilated, and sacred home-like hostel campus."
+      },
+      "img2": {
+        "title": "Strength & Courage",
+        "description": "Cultivating confidence and fearlessness in our girls for a bright future."
+      },
+      "img3": {
+        "title": "Meals & Togetherness",
+        "description": "Girls enjoying nutritious, home-style vegetarian meals together."
+      },
+      "img4": {
+        "title": "Daily Prayers",
+        "description": "Devotional daily prayers for cultural and spiritual awakening."
+      }
+    }
   },
   "trustees": {
     "title": "Our Honorable Trustees",
@@ -164,18 +190,23 @@
   },
   "faq": {
     "title": "Frequently Asked Questions",
+    "subtitle": "Answers to common questions regarding admission, facilities, and hostel life.",
     "items": {
       "q1": {
-        "q": "1. What is the age limit for admission?",
-        "a": "Our organization generally admits girls studying from Grade 5 up to College level."
+        "q": "1. Which grades and age groups of girls are eligible for admission?",
+        "a": "Lohana and Saraswat Brahmin community girls studying in Grades 1 to 12, college students, or those pursuing lifecraft studies are eligible, admitted based on merit and financial need."
       },
       "q2": {
-        "q": "2. Is there any fee charged for the hostel?",
-        "a": "Since our trust is run by the Raghuvanshi Lohana community, lodging and boarding are completely free of charge for Lohana girls."
+        "q": "2. Is there any fee charged for lodging and boarding?",
+        "a": "No, absolutely not. The trust provides 100% free lodging, boarding, study materials, clothing, toiletries, and school fee assistance."
       },
       "q3": {
-        "q": "3. What security measures are in place?",
-        "a": "Safety is our top priority. We provide 24-hour female guards, CCTV monitoring, and biometric attendance."
+        "q": "3. What security arrangements are in place for the girls?",
+        "a": "We prioritize safety above all. The campus features 24-hour CCTV surveillance, security guards, and constant presence of experienced wardens."
+      },
+      "q4": {
+        "q": "4. How can we make financial contributions or donations to the hostel?",
+        "a": "Donations can be made via cash, cheque, draft, or direct bank transfer listed on the website. The trust provides income tax exemption certificates under Sections 12A & 80G."
       }
     }
   },
@@ -183,28 +214,28 @@
     "title": "Contact Us",
     "subtitle": "Feel free to contact us for any of your inquiries or informational needs.",
     "addressLabel": "Address",
-    "addressVal": "Shri Jalaram Kanya Chatralay Road, Near Lohana Mahajan Wadi, Rajkot, Gujarat - 360001",
-    "phoneLabel": "Phone & WhatsApp",
-    "phoneVal": "+91 98240 12345\n+91 281 245 6789",
+    "addressVal": "Nyay Court Road, Odhadwadi, Rapar-Kutch, Gujarat - 370145",
+    "phoneLabel": "Mobile",
+    "phoneVal": "+91 99044 31108\n+91 99253 36963",
     "emailLabel": "Email",
     "emailVal": "info@jalaramchatralay.org",
-    "googleMapBtn": "View Google Map",
+    "googleMapBtn": "View on Google Maps",
     "form": {
-      "title": "Enquiry Form",
-      "name": "Your Full Name",
-      "namePlaceholder": "Enter name here",
-      "phone": "Mobile Number",
-      "phonePlaceholder": "10-digit number",
-      "email": "Email (Optional)",
-      "emailPlaceholder": "Enter email here",
+      "title": "Send a Message",
+      "name": "Full Name",
+      "namePlaceholder": "Enter your name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email",
       "message": "Message",
-      "messagePlaceholder": "Describe your inquiry in detail...",
+      "messagePlaceholder": "How can we help you?",
       "submit": "Send Message",
-      "alert": "Your message has been sent successfully. We will contact you shortly."
+      "alert": "Your message has been sent successfully. We will get back to you shortly."
     }
   },
   "footer": {
-    "desc": "Dedicated trust for education and moral values of Lohana community daughters since 1988.",
+    "desc": "A dedicated trust since 1988 providing education, security, and cultural values to community daughters.",
     "quickLinks": "Quick Links",
     "info": "Information",
     "faq": "FAQs",
@@ -212,9 +243,9 @@
     "privacy": "Privacy Policy",
     "trustees": "Board of Trustees",
     "contact": "Contact Us",
-    "phone": "+91 281 245 6789",
+    "phone": "+91 99044 31108\n+91 99253 36963",
     "email": "info@jalaramchatralay.org",
-    "copyright": "© 2024 Shri Jalaram Raghuvanshi Lohana Kanya Chatralay. All Rights Reserved.",
-    "devNote": "Designed for the growth of our community daughters."
+    "copyright": "© 2026 Shree Jalaram Raghuvanshi Lohana Kanya Chatralay, Rapar (Kutch). All Rights Reserved.",
+    "devNote": "Dedicated to the holistic development and bright future of girls."
   }
 }

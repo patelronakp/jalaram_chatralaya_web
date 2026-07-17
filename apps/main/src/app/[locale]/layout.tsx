@@ -7,6 +7,7 @@ import { NextIntlClientProvider } from "next-intl"
 import { getMessages } from "next-intl/server"
 import React from "react"
 
+import Toaster from "../../components/Toaster"
 import { routing } from "../../i18n/routing"
 import { Providers } from "./providers"
 
@@ -14,7 +15,11 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "શ્રી જલારામ કન્યા છાત્રાલય | Shri Jalaram Kanya Chatralay",
-  description: "દીકરીઓના સર્વાંગી ઉત્કર્ષ, સુરક્ષા અને સંસ્કારનું પવિત્ર ધામ. અમે ૧૯૮૮ થી રઘુવંશી દીકરીઓના ઉજ્જવળ ભવિષ્ય માટે કાર્યરત છીએ.",
+  description:
+    "દીકરીઓના સર્વાંગી ઉત્કર્ષ, સુરક્ષા અને સંસ્કારનું પવિત્ર ધામ. અમે ૧૯૮૮ થી રઘુવંશી દીકરીઓના ઉજ્જવળ ભવિષ્ય માટે કાર્યરત છીએ.",
+  icons: {
+    icon: "/images/logo.png",
+  },
 }
 
 export default async function RootLayout({
@@ -26,7 +31,7 @@ export default async function RootLayout({
 }) {
   const { locale } = await params
 
-  if (!routing.locales.includes(locale as typeof routing.locales[number])) {
+  if (!routing.locales.includes(locale as (typeof routing.locales)[number])) {
     notFound()
   }
 
@@ -37,6 +42,7 @@ export default async function RootLayout({
       <body className={`${inter.className} h-full antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <Providers>{children}</Providers>
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>
