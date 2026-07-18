@@ -62,7 +62,9 @@ export function Footer() {
                 />
               </div>
               <span className="font-bold text-lg leading-tight">
-                {locale === "gu" ? "શ્રી જલારામ કન્યા છાત્રાલય" : "Shree Jalaram Kanya Chatralay"}
+                {locale === "gu"
+                  ? "શ્રી જલારામ રઘુવંશી લોહાણા કન્યા છાત્રાલય, રાપર(કચ્છ)"
+                  : "Shree Jalaram Raghuwanshi Lohana Kanya Chatralay, Raper(Kutch)"}
               </span>
             </div>
             <p className="opacity-70 text-sm leading-relaxed mb-6 font-sans">{t("desc")}</p>
