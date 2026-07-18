@@ -9,7 +9,7 @@
     "formBtn": "Admission Form"
   },
   "hero": {
-    "badge": "Over 38 years of selfless service and a proud tradition.",
+    "badge": "Over 38+ years of selfless service and a proud tradition.",
     "title": "A Safe Home for Daughters, a Sanctuary of Education and Values",
     "subtitle": "Since 1988, with the blessings of Pujya Chande Bapa, this sacred place provides 100% free lodging, excellent education, and the courage for girls from villages and remote areas to live independently.",
     "primaryCta": "Admission Process",
@@ -30,7 +30,7 @@
       "experience": "35+",
       "freeFacility": "100%",
       "security": "24x7",
-      "students": "500+"
+      "students": "3000+"
     }
   },
   "about": {
@@ -76,8 +76,8 @@
         "description": "Physical and mental growth. Sports equipment and an open playground for health and recreation."
       },
       "hotTub": {
-        "title": "Solar Hot Water Facility",
-        "description": "Eco-friendly solar system. Solar water heaters for warm water during winters and as needed."
+        "title": "Hot Water Facility",
+        "description": "Hot water for warm water during winters and as needed."
       }
     }
   },
