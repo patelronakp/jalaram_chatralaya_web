@@ -67,8 +67,8 @@ export function Header() {
           />
           <span className="font-gujarati text-sm md:text-base lg:text-lg xl:text-xl font-bold text-primary hidden md:block max-w-[180px] lg:max-w-[280px] xl:max-w-[360px] 2xl:max-w-none leading-tight">
             {locale === "gu"
-              ? "શ્રી જલારામ રઘુવંશી લોહાણા કન્યા છાત્રાલય"
-              : "Shree Jalaram Raghuvanshi Lohana Kanya Chatralay"}
+              ? "શ્રી જલારામ રઘુવંશી લોહાણા કન્યા છાત્રાલય, રાપર(કચ્છ)"
+              : "Shree Jalaram Raghuvanshi Lohana Kanya Chatralay, Rapar(Kutch)"}
           </span>
         </Link>
 
